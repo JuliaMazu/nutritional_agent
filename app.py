@@ -1,4 +1,5 @@
-
+from dotenv import load_dotenv
+load_dotenv()
 from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, TextLoader
 from langchain_mistralai import MistralAIEmbeddings
 from langchain_mistralai import ChatMistralAI
@@ -90,6 +91,7 @@ with st.sidebar:
     )
     for uploaded_file in uploaded_files:
         bytes_data = uploaded_file.read()
+        # st.write("filename:", uploaded_file.name)
         loaded = load_content(uploaded_file.name) #create list of pages from file
 
     #st.subheader("Chunk choise")
