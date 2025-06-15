@@ -6,4 +6,4 @@ langchain-mistralai==0.2.10
 langsmith==0.3.45
 langchain-community==0.3.25
 langchain-text-splitters==0.3.8
-chromadb==1.0.12
+chromadb==0.3.29
