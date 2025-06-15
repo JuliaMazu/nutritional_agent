@@ -7,3 +7,4 @@ langsmith==0.3.45
 langchain-community==0.3.25
 langchain-text-splitters==0.3.8
 chromadb==0.3.29
+sqlite3==3.50.1
